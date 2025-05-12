@@ -20,13 +20,13 @@ get_header();
 
 <main id="primary" class="site-main">
 
-	<section id="top_FV">
+	<section id="top_FV" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/top_FV.png');">
 			<div class="text">
 				<h2>時代は変わり続ける。<br>だから、挑み続ける。</h2>
 			</div>
 		</section>
 
-		<section id="top_sec01">
+		<section id="top_sec01" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/top_FV2.png');">
 			<div class="section_title">
 				<h2>営業に、もっと人のチカラを。</h2>
 			</div>

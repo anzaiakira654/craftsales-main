@@ -33,18 +33,18 @@
 			<div class="wid02 flex">
 				<div class="wid03">
 					<a href="<?php echo esc_url(home_url('/')); ?>"><p>TOPページ</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/news.html"><p>NEWS</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/company.html"><p>会社情報</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/recruit.html"><p>求人情報</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/contact.html"><p>お問い合わせ</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/sitemap.html"><p>サイトマップ</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/news_main/news.php"><p>NEWS</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/company_main/company.php"><p>会社情報</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/recruit_main/recruit.php"><p>求人情報</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/contact_main/contact.php"><p>お問い合わせ</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/sitemap_main/sitemap.php"><p>サイトマップ</p></a>
 				</div>
 				<div class="wid03">
-					<a href="<?php echo get_template_directory_uri(); ?>/business.html"><p>事業案内</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/business.html#biz_sec02-1"><p>法人向け営業代行業務</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/business.html#biz_sec02-2"><p>営業コンサルティング</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/business.html#biz_sec02-3"><p>テレアポ支援</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/business.html#biz_sec02-4"><p>営業研修・人材育成</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main/business.php"><p>事業案内</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-1"><p>法人向け営業代行業務</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-2"><p>営業コンサルティング</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-3"><p>テレアポ支援</p></a>
+					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-4"><p>営業研修・人材育成</p></a>
 				</div>
 			</div>
 		</div>

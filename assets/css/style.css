@@ -115,10 +115,11 @@ button {display: block;margin: 0 auto;}
 ------------------------------------------------------------ */
 header {position:fixed;top: 0;width: 100%;height: 100px;background: #FFF;z-index: 999;display: flex;align-items: center;}
 .header_menu{width: 90%;margin: 0 auto;}
-header .logo {width: 300px;}
-header .nav_pc p{padding: 25px;}
+header .site-title {width: 300px;position: relative;left: 20px;}
+header .menu-item {padding: 25px;}
 header .header_sp {display: none;}
 
+#primary-menu {display: flex;justify-content: space-between;}
 @media screen and (max-width:1440px){
 header .nav_pc p {font-size: clamp(12px, 1.5vw, 20px);padding:  20px 1vw;}
 
@@ -157,7 +158,7 @@ header .logo {width: 240px;}
 
 
 #top_FV {
-background: url( "img/top_FV.png");
+background: url( "<?php echo $template_dir; ?>src/img/top_FV.png");
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
