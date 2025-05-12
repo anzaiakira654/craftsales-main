@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<title>株式会社CRAFT SALES｜TOP</title>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<script src="./js/jquery-3.3.1.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<main>
+		<!--　ヘッター　-->
+		<header>
+			<div class="header_menu flex">
+				<h1 class="logo">
+					<div class="logo_main">
+						<a href="index.html">
+						<h1><img src="img/logo01.png" width="420" height="100" alt=""/></h1>
+						</a>
+					</div>
+				</h1>
+				<nav class="nav_pc">
+					<ul class="flex">
+						<li><a href="news.html"><p>NEWS</p></a></li>
+						<li><a href="company.html"><p>会社情報</p></a></li>
+						<li><a href="business.html"><p>事業内容</p></a></li>
+						<li><a href="recruit.html"><p>求人情報</p></a></li>
+						<li><a href="contact.html"><p>お問い合わせ</p></a></li>
+					</ul>
+				</nav>
+				<div class="header_sp">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="nav_sp">
+						<ul>
+							<li><a href="index.html"><p>TOPページ</p></a></li>
+							<li><a href="news.html"><p>NEWS</p></a></li>
+							<li><a href="company.html"><p>会社情報</p></a></li>
+							<li><a href="recruit.html"><p>求人情報</p></a></li>
+							<li><a href="contact.html"><p>お問い合わせ</p></a></li>
+							<li><a href="sitemap.html"><p>サイトマップ</p></a></li>
+							<li><a href="business.html"><p>事業内容</p></a></li>
+							<li><a href="business.html#biz_sec02-1"><p>法人向け営業代行業務</p></a></li>
+							<li><a href="business.html#biz_sec02-2"><p>営業コンサルティング</p></a></li>
+							<li><a href="business.html#biz_sec02-3"><p>テレアポ支援</p></a></li>
+							<li><a href="business.html#biz_sec02-4"><p>営業研修・人材育成</p></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<div class="header_top bold button01">
+			<a href="#">
+				<p> ＞ </p>
+			</a>
+		</div>
+		
+		<section id="new_FV" class="FV_2">
+			<div class="text">
+				<h2>NEWS</h2>
+			</div>
+		</section>
+		<!--
+		<section id="new_sec01">
+			<div  class="sec_main">
+				<div class="section_title">
+					<h2>NEWS</h2>
+				</div>
+				<div class="sec05">
+					<div class="sec05_news">
+						<a href="#" class="flex">
+							<p class="sec05_p01">2025/04/16</p>
+							<p class="sec05_p02">お知らせ内容</p>
+							<p class="sec05_p03">＞</p>
+						</a>
+					</div>
+					<div class="sec05_news">
+						<a href="#" class="flex">
+							<p class="sec05_p01">2025/04/16</p>
+							<p class="sec05_p02">お知らせ内容</p>
+							<p class="sec05_p03">＞</p>
+						</a>
+					</div>
+					<div class="sec05_news">
+						<a href="#" class="flex">
+							<p class="sec05_p01">2025/04/16</p>
+							<p class="sec05_p02">お知らせ内容</p>
+							<p class="sec05_p03">＞</p>
+						</a>
+					</div>
+				</div>
+				<div class="button">
+					<a href="index.html#top_sec05">
+						<p class="button-text">一覧を見る　＞</p>
+					</a>
+				</div>
+			</div>
+		</section>-->
+		
+		<section id="new_sec01" >
+			<div class="news-list" id="newsList">
+			<!-- JavaScriptで挿入 -->
+			</div>
+
+			<div class="pagination" id="pagination">
+			<!-- JavaScriptで挿入 -->
+			</div>
+		</section>
+
+		<script>
+		const newsData = [
+			{ date: "2025/04/18", content: "配送エリア拡大のお知らせ", url: "news/news11.html" },
+			{ date: "2025/04/16", content: "ゴールデンウィーク休業のお知らせ", url: "news/news10.html" },
+			{ date: "2025/04/10", content: "新サービス『〇〇配送プラン』開始", url: "news/news09.html" },
+			{ date: "2025/04/05", content: "ホームページをリニューアルしました", url: "news/news08.html" },
+			{ date: "2025/03/28", content: "採用情報を更新しました", url: "news/news07.html" },
+			{ date: "2025/03/20", content: "物流業界展示会に出展します", url: "news/news06.html" },
+			{ date: "2025/03/12", content: "臨時メンテナンスのお知らせ", url: "news/news05.html" },
+			{ date: "2025/03/01", content: "配送エリア拡大のお知らせ", url: "news/news04.html" },
+			{ date: "2025/02/25", content: "冬季繁忙期の対応について", url: "news/news03.html" },
+			{ date: "2025/02/10", content: "サポート窓口の電話番号が変わります", url: "news/news02.html" },
+			{ date: "2025/01/30", content: "年末年始休業のお知らせ", url: "news/news01.html" }
+		];
+
+		const itemsPerPage = 10;
+		const totalPages = Math.ceil(newsData.length / itemsPerPage);
+		const newsList = document.getElementById("newsList");
+		const pagination = document.getElementById("pagination");
+
+		function renderPage(page) {
+		  // ニュースを表示
+		  const start = (page - 1) * itemsPerPage;
+		  const end = start + itemsPerPage;
+		  const items = newsData.slice(start, end);
+
+			
+		newsList.innerHTML = items.map(item => `
+		  <div class="news-item">
+			<a href="${item.url}" style="display: flex; justify-content: space-between; text-decoration: none; color: inherit;">
+			  <div>${item.date}</div>
+			  <div>${item.content}</div>
+			</a>
+		  </div>
+		`).join("");
+
+		  // ページネーションを表示
+		  let paginationHTML = "";
+		  for (let i = 1; i <= totalPages; i++) {
+			if (i === page) {
+			  paginationHTML += `<span class="active">${i}</span>`;
+			} else if (i <= 3 || i > totalPages - 1 || Math.abs(page - i) <= 1) {
+			  paginationHTML += `<button onclick="renderPage(${i})">${i}</button>`;
+			} else if (!paginationHTML.endsWith("…")) {
+			  paginationHTML += `<span>…</span>`;
+			}
+		  }
+		  pagination.innerHTML = paginationHTML;
+		}
+
+		// 初期表示
+		renderPage(1);
+		</script>
+	
+	  	<footer>
+			<div class="top flex_s">
+				<div class="menu">
+					<div class="logo_main">
+						<img src="img/logo02.png" width="270" height="53" alt=""/> 
+					</div>
+					<p>
+					株式会社CRAFT SALES<br>
+					〒100-0001<br>
+					東京都千代田区千代田1-1-1<br>
+					TEL:000-1234-5678<br>
+					FAX:000-1234-5678
+					</p>
+					<div class="button_icon">
+						<a href="index.html">
+							<img src="img/icon01.png" width="48" height="48" alt=""/>
+						</a>
+					</div>
+				</div>
+				<div class="wid02 flex">
+					<div class="wid03">
+						<a href="index.html"><p>TOPページ</p></a>
+						<a href="news.html"><p>NEWS</p></a>
+						<a href="company.html"><p>会社情報</p></a>
+						<a href="recruit.html"><p>求人情報</p></a>
+						<a href="contact.html"><p>お問い合わせ</p></a>
+						<a href="sitemap.html"><p>サイトマップ</p></a>
+					</div>
+					<div class="wid03">
+						<a href="business.html"><p>事業案内</p></a>
+						<a href="business.html#biz_sec02-1"><p>法人向け営業代行業務</p></a>
+						<a href="business.html#biz_sec02-2"><p>営業コンサルティング</p></a>
+						<a href="business.html#biz_sec02-3"><p>テレアポ支援</p></a>
+						<a href="business.html#biz_sec02-4"><p>営業研修・人材育成</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div id="copyright"><p>Copyright© 2025 CRAFT SALES . All Rights Reserved. </p></div>
+			</div>
+		</footer>
+		
+	</main>
+	
+</body>
+</html>
