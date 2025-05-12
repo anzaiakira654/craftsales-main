@@ -150,7 +150,8 @@ function cs_scripts()
 	『WP　JS読み込み』とか検索すればいいでしょう。
 	wp_enqueue_script( 'cs-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	*/
-	wp_enqueue_script('cs-main', get_template_directory_uri() . '/src/js/main.js', array(), _S_VERSION);
+	wp_enqueue_script('cs-jquery', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array(), _S_VERSION);
+	wp_enqueue_script('cs-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
