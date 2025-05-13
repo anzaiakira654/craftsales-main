@@ -48,7 +48,7 @@ get_header();
 					<div class="tag"><p>実績：累計100社超の営業支援実績</p></div>
 				</div>
 				<div class="img">
-			    	<img src="img/business_img01.png" width="431" height="288" alt=""/>
+			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/business_img01.png" width="431" height="288" alt=""/>
 				</div>
 			</div>
 			<div id="biz_sec02-2" class="sec2-1 flex_s">
@@ -60,7 +60,7 @@ get_header();
 					<div class="tag"><p>営業の仕組みを“戦略レベル”から整備可能</p></div>
 				</div>
 				<div class="img">
-			    	<img src="img/business_img02.png" width="431" height="288" alt=""/>
+			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/business_img02.png" width="431" height="288" alt=""/>
 				</div>
 			</div>
 			<div id="biz_sec02-3" class="sec2-1 flex_s">
@@ -72,7 +72,7 @@ get_header();
 					<div class="tag"><p>専門チームによる高品質なアポイントを獲得</p></div>
 				</div>
 				<div class="img">
-			    	<img src="img/business_img03.png" width="431" height="288" alt=""/>
+			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/business_img03.png" width="431" height="288" alt=""/>
 				</div>
 			</div>
 			<div id="biz_sec02-4" class="sec2-1 flex_s">
@@ -84,7 +84,7 @@ get_header();
 					<div class="tag"><p>即実践に使える営業スキルが身につく</p></div>
 				</div>
 				<div class="img">
-			    	<img src="img/business_img04.png" width="431" height="288" alt=""/>
+			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/business_img04.png" width="431" height="288" alt=""/>
 				</div>
 			</div>
 		</section>

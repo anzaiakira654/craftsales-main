@@ -32,19 +32,43 @@
 			</div>
 			<div class="wid02 flex">
 				<div class="wid03">
-					<a href="<?php echo esc_url(home_url('/')); ?>"><p>TOPページ</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/news_main/news.php"><p>NEWS</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/company_main/company.php"><p>会社情報</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/recruit_main/recruit.php"><p>求人情報</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/contact_main/contact.php"><p>お問い合わせ</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/sitemap_main/sitemap.php"><p>サイトマップ</p></a>
+					<nav id="site-navigation" class="main-navigation nav_pc">
+						<?php
+							$pages = get_pages( array( 'sort_column' => 'ID', 'sort_order' => 'asc' ) );
+							foreach ( $pages as $page ) {
+								$current = ( get_the_ID() == $page->ID ) ? ' class="current_page_item"' : '';
+								echo '<li class="page_item page-item-' . $page->ID . '"' . $current . '>';
+								echo '<a href="' . get_permalink( $page->ID ) . '">' . esc_html( $page->post_title ) . '</a>';
+								echo '</li>';
+							}
+						?>
+					</nav><!-- #site-navigation -->
 				</div>
 				<div class="wid03">
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main/business.php"><p>事業案内</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-1"><p>法人向け営業代行業務</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-2"><p>営業コンサルティング</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-3"><p>テレアポ支援</p></a>
-					<a href="<?php echo get_template_directory_uri(); ?>/template-parts/business_main//business.php#biz_sec02-4"><p>営業研修・人材育成</p></a>
+					<?php
+						$page = get_post(21); // 固定ページID
+						if ($page) {
+							echo '<li class="page_item page-item-' . $page->ID . '">';
+							echo '<a href="' . get_permalink($page->ID) . '">' . esc_html($page->post_title) . '</a>';
+							echo '</li>';
+						}
+					?>
+					<?php
+						$page_id = 21;
+						$base_url = get_permalink($page_id);
+					?>
+					<li class="page_item page-item-<?php echo $page_id; ?>">
+						<a href="<?php echo esc_url($base_url . '#biz_sec02-1'); ?>"><p>法人向け営業代行業務</p></a>
+					</li>
+					<li class="page_item page-item-<?php echo $page_id; ?>">
+						<a href="<?php echo esc_url($base_url . '#biz_sec02-2'); ?>"><p>営業コンサルティング</p></a>
+					</li>
+					<li class="page_item page-item-<?php echo $page_id; ?>">
+						<a href="<?php echo esc_url($base_url . '#biz_sec02-3'); ?>"><p>テレアポ支援</p></a>
+					</li>
+					<li class="page_item page-item-<?php echo $page_id; ?>">
+						<a href="<?php echo esc_url($base_url . '#biz_sec02-4'); ?>"><p>営業研修・人材育成</p></a>
+					</li>
 				</div>
 			</div>
 		</div>

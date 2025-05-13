@@ -39,7 +39,7 @@ get_header();
 					<span class="t_right">代表取締役　田中 一成</span></p>
 				</div>
 				<div class="img">
-	    	    	<img src="img/company_img01.png" width="700" height="269" alt=""/>
+	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img01.png" width="700" height="269" alt=""/>
 				</div>
 			</div>
 		</section>
@@ -107,10 +107,10 @@ get_header();
 				</div>
 				<div class="img flex">
 					<div>
-   	    	    		<img src="img/company_img02.png" width="500" height="333" alt=""/> 
+   	    	    		<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img02.png" width="500" height="333" alt=""/> 
 					</div>
 					<div>
-   	    		    	<img src="img/company_img03.png" width="500" height="333" alt=""/>
+   	    		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img03.png" width="500" height="333" alt=""/>
 					</div>
 				</div>
 			</div>
@@ -132,7 +132,7 @@ get_header();
 				<li><span class="dot last"></span><p class="text">2025年4月　新部署「営業コンサル事業部」立ち上げ</p></li>
 				</ul>
 				<div class="timeline-image">
-					<img src="img/company_img05.png" width="268" height="402" alt=""/>
+					<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img05.png" width="268" height="402" alt=""/>
 				</div>
 				</div>
 			</div>
