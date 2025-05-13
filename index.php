@@ -73,13 +73,8 @@ get_header();
 					<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_icon01.png" width="96" height="96" alt="" />
 				</div>
 				<div class="text">
-<<<<<<< HEAD
 					<h3>法人向け営業代行業務</h3>
 					<p>ターゲット選定からアプローチ、アポイント獲得、クロージングまでを一貫して代行します。</p>
-=======
-					<p>営業は、ただ商品を売るだけの仕事ではありません。<br>クライアントの想いを受け止め、その先の未来をともにつくる仕事です。<br>私たちは、数字だけでなく“人”を大切にしながら、変化の時代に挑み続けています。<br><br>
-					<span class="t_right">代表取締役 田中 一成</span></p>
->>>>>>> 40298bcca680fadebdc4bdaa2aa0cbf96ded861d
 				</div>
 			</div>
 			<div class="box flex">
