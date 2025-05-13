@@ -52,6 +52,9 @@ function cs_setup()
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__('Primary', 'cs'),
+			'global' => 'グローバル',
+			'side'   => 'サイド',
+			'footer' => 'フッター'
 		)
 	);
 

@@ -36,7 +36,7 @@ get_header();
 				</div>
 				<div class="text">
 					<p>営業は、ただ商品を売るだけの仕事ではありません。<br>クライアントの想いを受け止め、その先の未来をともにつくる仕事です。<br>私たちは、数字だけでなく“人”を大切にしながら、変化の時代に挑み続けています。<br><br>
-					<span class="t_right">代表取締役　田中 一成</span></p>
+					<span class="t_right">代表取締役 田中 一成</span></p>
 				</div>
 			</div>
 		</section>

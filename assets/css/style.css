@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video
- { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:middle; }
+ { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:middle; list-style: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 html { overflow-y: scroll; -webkit-text-size-adjust:100%; }
@@ -278,9 +278,15 @@ footer .menu p {line-height: 40px;}
 footer .logo_main{width: 270px;padding: 50px 0;}
 footer .wid02 {gap: 200px;padding: 150px 0;}
 footer .wid03 p {line-height: 40px;color: #fff;}
+footer .page_item a {line-height: 40px;color: #fff;}
 footer .button_icon{width: 48px;margin: 50px 0;}
 footer .copy{border-top: 1px solid #fff;height: 80px;}
 #copyright p{text-align: center;font-size: 12px;padding: 25px;color: #fff;}
+
+#site-navigation .page-item-2,
+#site-navigation .page-item-3,
+#site-navigation .page-item-9,
+#site-navigation .page-item-21{display: none;}
 
 @media screen and (max-width:1440px){
 footer .top{width: 90%;gap: 10px;}

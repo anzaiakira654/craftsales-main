@@ -29,7 +29,7 @@ get_header();
 				<p class="message">お問い合わせのご連絡は<br class="pc_none">下記までお願いいたします。</p>
 				<div class="con_call flex">
 					<div class="img">
-	    	    		<img src="img/contact_img01.png" width="89" height="89" alt=""/>
+	    	    		<img src="<?php echo get_template_directory_uri(); ?>/src/img/contact_img01.png" width="89" height="89" alt=""/>
 					</div>
 					<div class="text">
 						<p>電話　：000-1234-5678<br>ＦＡＸ：000-1234-5678</p>
