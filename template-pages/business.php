@@ -48,7 +48,7 @@ get_header();
 					<div class="tag"><p>実績：累計100社超の営業支援実績</p></div>
 				</div>
 				<div class="img">
-			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/business_img01.png" width="431" height="288" alt=""/>
+					<img src="<?php the_field('business_img01'); ?>" >
 				</div>
 			</div>
 			<div id="biz_sec02-2" class="sec2-1 flex_s">
