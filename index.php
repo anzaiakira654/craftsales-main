@@ -32,11 +32,11 @@ get_header();
 		</div>
 		<div class="sec_main flex_s">
 			<div class="img">
-				<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_img01.png" width="570" height="473" alt="" />
+				<img src="<?php the_field('top_img01'); ?>" >
 			</div>
 			<div class="text">
 				<p>営業は、ただ商品を売るだけの仕事ではありません。<br>クライアントの想いを受け止め、その先の未来をともにつくる仕事です。<br>私たちは、数字だけでなく“人”を大切にしながら、変化の時代に挑み続けています。<br><br>
-					<span class="t_right">代表取締役　田中 一成</span>
+					<span class="t_right">代表取締役 <?php the_field('field_6823f3f8bb68c', 'president_name'); ?></span>
 				</p>
 			</div>
 		</div>
@@ -48,14 +48,14 @@ get_header();
 		</div>
 		<div class="sec_main flex_s">
 			<div class="img">
-				<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_img02.png" width="549" height="405" alt="" />
+				<img src="<?php the_field('top_img02'); ?>" >
 			</div>
 			<div class="text">
 				<p>日々変化する社会環境や多様化するお客様のニーズに柔軟に対応しながら、常に高品質で誠実なサービスの提供を心がけています。<br>企業様・個人様を問わず、お客様一人ひとりに寄り添ったご提案とサポートを行い、長期的に信頼していただけるパートナーであり続けることを目指しています。<br><br>「人と人とのつながり」や「丁寧な仕事」を大切にし、小さなご依頼も大きなプロジェクトも、ひとつひとつ真摯に取り組んでまいります。</p>
 			</div>
 		</div>
 		<div class="button">
-			<a href="<?php echo get_template_directory_uri(); ?>/company.html">
+			<a href="<?php echo home_url('/company/'); ?>">
 				<p class="button-text">
 					<span>会社情報を見る</span><span class="icon-arrow-r"></span>
 				</p>
@@ -70,7 +70,7 @@ get_header();
 		<div class="sec_main flex_s">
 			<div class="box flex">
 				<div class="img">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_icon01.png" width="96" height="96" alt="" />
+					<img src="<?php the_field('top_icon01'); ?>" >
 				</div>
 				<div class="text">
 					<h3>法人向け営業代行業務</h3>
@@ -79,7 +79,7 @@ get_header();
 			</div>
 			<div class="box flex">
 				<div class="img">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_icon02.png" width="96" height="96" alt="" />
+					<img src="<?php the_field('top_icon02'); ?>" >
 				</div>
 				<div class="text">
 					<h3>営業コンサルティング</h3>
@@ -90,7 +90,7 @@ get_header();
 		<div class="sec_main flex_s">
 			<div class="box flex">
 				<div class="img">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_icon03.png" width="96" height="96" alt="" />
+					<img src="<?php the_field('top_icon03'); ?>" >
 				</div>
 				<div class="text">
 					<h3>テレアポ支援</h3>
@@ -99,7 +99,7 @@ get_header();
 			</div>
 			<div class="box flex">
 				<div class="img">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_icon04.png" width="96" height="96" alt="" />
+					<img src="<?php the_field('top_icon04'); ?>" >
 				</div>
 				<div class="text">
 					<h3>営業研修・人材育成</h3>
@@ -108,8 +108,10 @@ get_header();
 			</div>
 		</div>
 		<div class="button">
-			<a href="<?php echo get_template_directory_uri(); ?>/business.html">
-				<p class="button-text">サービスを見る　＞</p>
+			<a href="<?php echo home_url('/business/'); ?>">
+				<p class="button-text">
+					<span>サービスを見る</span><span class="icon-arrow-r"></span>
+				</p>
 			</a>
 		</div>
 	</section>
@@ -123,21 +125,23 @@ get_header();
 				<h3>今できることから、</h3>
 			</div>
 			<div>
-				<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_img03.png" width="1200" height="413" alt="" />
+				<img src="<?php the_field('top_img03'); ?>" >
 			</div>
 			<div class="sec04_02">
 				<h3>始めよう！</h3>
 			</div>
 			<div class="sec04_03">
-				<img src="<?php echo get_template_directory_uri(); ?>/src/img/top_img04.png" width="490" height="157" alt="" />
+				<img src="<?php the_field('top_img04'); ?>" >
 			</div>
 		</div>
 		<div class="t_center">
 			<p>未経験でも大丈夫です。<br>大切なのは、“話したい” “伝えたい”という気持ち。<br>私たちと一緒に、クライアントに必要とされる営業マンを目指しませんか？</p>
 		</div>
 		<div class="button">
-			<a href="<?php echo get_template_directory_uri(); ?>/recruit.html">
-				<p class="button-text">求人情報を見る　＞</p>
+			<a href="<?php echo home_url('/recruit/'); ?>">
+				<p class="button-text">
+					<span>求人情報を見る</span><span class="icon-arrow-r"></span>
+				</p>
 			</a>
 		</div>
 	</section>
@@ -152,22 +156,19 @@ get_header();
 				<div class="sec05_news">
 					<a href="#" class="flex">
 						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容</p>
-						<p class="sec05_p03">＞</p>
+						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
 					</a>
 				</div>
 				<div class="sec05_news">
 					<a href="#" class="flex">
 						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容</p>
-						<p class="sec05_p03">＞</p>
+						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
 					</a>
 				</div>
 				<div class="sec05_news">
 					<a href="#" class="flex">
 						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容</p>
-						<p class="sec05_p03">＞</p>
+						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
 					</a>
 				</div>
 
@@ -178,10 +179,12 @@ get_header();
 
 			</div>
 			<div class="button">
-				<a href="<?php echo get_template_directory_uri(); ?>/news.html">
-					<p class="button-text">一覧を見る　＞</p>
-				</a>
-			</div>
+			<a href="<?php echo home_url('/news/'); ?>">
+				<p class="button-text">
+					<span>一覧を見る</span><span class="icon-arrow-r"></span>
+				</p>
+			</a>
+		</div>
 		</div>
 	</section>
 

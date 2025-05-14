@@ -36,7 +36,7 @@ get_header();
 					世の中の変化はますます激しく、答えのない課題も増えています。だからこそ、私たちは「仕組み」だけでなく、「人の力」にこだわります。成果を出せる営業チーム、挑戦できる組織文化、新しい価値を生み出す仕組みづくり。それらを一つひとつ、丁寧に育てていくことが私たちの使命です。<br>
 					これからも現場に根ざし、企業と人がともに成長できる未来をつくり続けてまいります。<br>
 					今後ともご支援ご指導のほど、よろしくお願い申し上げます。<br><br>
-					<span class="t_right">代表取締役　田中 一成</span></p>
+					<span class="t_right">代表取締役 <?php the_field('president_name'); ?></span></p>
 				</div>
 				<div class="img">
 	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img01.png" width="700" height="269" alt=""/>
@@ -53,55 +53,47 @@ get_header();
 					<table class="company-profile">
 						<tr>
 							<th><p>会社名</p></th>
-							<td><p>株式会社CRAFT SALES</p></td>
+							<td><p><?php the_field('company_name'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>所在地</p></th>
-							<td><p>〒100-0001　東京都千代田区千代田1-1-1</p></td>
+							<td><p><?php the_field('president_name'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>代表者名</p></th>
-							<td><p>田中 一成</p></td>
+							<td><p><?php the_field('company_address'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>設立年月日</p></th>
-							<td><p>2020年4月</p></td>
+							<td><p><?php the_field('company_year'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>資本金</p></th>
-							<td><p>1000万円</p></td>
+							<td><p><?php the_field('company_capital'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>事業内容</p></th>
-							<td><p>
-							法人向け営業代行業務<br>
-							テレアポ・フィールドセールス支援<br>
-							営業コンサルティング<br>
-							営業研修・人材育成
-							</p></td>
+							<td><p><?php the_field('business_name'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>取引銀行</p></th>
-							<td><p>〇〇銀行 本店営業部</p></td>
+							<td><p><?php the_field('company_bank'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>従業員数</p></th>
-							<td><p>100名</p></td>
+							<td><p><?php the_field('company_employees'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>主要取引先</p></th>
-							<td><p>
-							〇〇株式会社<br>
-							〇〇市役所
-							</p></td>
+							<td><p><?php the_field('company_clients'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>電話番号</p></th>
-							<td><p>000-1234-5678</p></td>
+							<td><p><?php the_field('company_call'); ?></p></td>
 						</tr>
 						<tr>
 							<th><p>FAX番号</p></th>
-							<td><p>000-1234-5678</p></td>
+							<td><p><?php the_field('company_fax'); ?></p></td>
 						</tr>
 					</table>
 				</div>

@@ -16,3 +16,22 @@
     left: 10px;
   }
 }
+
+:root {
+  --icon-arrow-br: url(../img/icon-arrow-br.svg);
+}
+
+.icon-arrow-br {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--icon-arrow-br);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 3px;
+    left: 10px;
+  }
+}

@@ -30,16 +30,14 @@
 			<div class="site-branding">
 				<?php
 					the_custom_logo();
-					if (is_front_page() && is_home()) :
+					if (is_front_page()) :
 				?>
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/src/img/logo01.png" width="420" height="100" alt=""/></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php the_field('logo01'); ?>" ></a></h1>
 				<?php
 				else :
 				?>
-					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/src/img/logo01.png" width="420" height="100" alt=""/></a></p>
-				<?php
-				endif;
-				?>
+					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php the_field('logo01'); ?>" ></a></p>
+				<?php endif; ?>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation nav_pc">
 				<?php
@@ -57,6 +55,6 @@
 
 		<div class="header_top bold button01">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-				<p> ＞ </p>
+				<p> <span class="icon-arrow-r"></span> </p>
 			</a>
 		</div>

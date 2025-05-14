@@ -18,11 +18,10 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/src/img/logo02.png" width="270" height="53" alt=""/> 
 				</div>
 				<p>
-				株式会社CRAFT SALES<br>
-				〒100-0001<br>
-				東京都千代田区千代田1-1-1<br>
-				TEL:000-1234-5678<br>
-				FAX:000-1234-5678
+				<?php the_field('field_6822efe9820b9' , 'company_name'); ?><br>
+				<?php the_field('field_6823f465bb68d' , 'company_address'); ?><br>
+				<?php the_field('field_6823ff68a3a17' , 'company_call'); ?><br>
+				<?php the_field('field_6823ff83a3a18' , 'company_fax'); ?>
 				</p>
 				<div class="button_icon">
 					<a href="index.html">
