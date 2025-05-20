@@ -60,7 +60,7 @@ get_header();
 			</div>
 		</section>-->
 		
-		<section id="new_sec01" >
+		<section id="new_sec01">
 			<div class="news-list" id="newsList">
 			<!-- JavaScriptで挿入 -->
 			</div>

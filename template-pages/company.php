@@ -39,7 +39,7 @@ get_header();
 					<span class="t_right">代表取締役 <?php the_field('president_name'); ?></span></p>
 				</div>
 				<div class="img">
-	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img01.png" width="700" height="269" alt=""/>
+					<img src="<?php the_field('company_img01'); ?>" >
 				</div>
 			</div>
 		</section>
@@ -99,10 +99,10 @@ get_header();
 				</div>
 				<div class="img flex">
 					<div>
-   	    	    		<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img02.png" width="500" height="333" alt=""/> 
+						<img src="<?php the_field('company_img02'); ?>" >
 					</div>
 					<div>
-   	    		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img03.png" width="500" height="333" alt=""/>
+						<img src="<?php the_field('company_img03'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@ get_header();
 				<li><span class="dot last"></span><p class="text">2025年4月　新部署「営業コンサル事業部」立ち上げ</p></li>
 				</ul>
 				<div class="timeline-image">
-					<img src="<?php echo get_template_directory_uri(); ?>/src/img/company_img05.png" width="268" height="402" alt=""/>
+					<img src="<?php the_field('company_img05'); ?>" >
 				</div>
 				</div>
 			</div>
@@ -137,7 +137,7 @@ get_header();
 			</div>
 			<div class="sec_main">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.436044527719!2d139.7477147478994!3d35.683944540345344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0b19763daf%3A0xd8f25ad45d307110!2z44CSMTAwLTAwMDE!5e0!3m2!1sja!2sjp!4v1745381518253!5m2!1sja!2sjp" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				<p>所在地：〒100-0001　東京都千代田区千代田1-1-1</p>
+				<p>所在地：<?php the_field('company_address'); ?></p>
 			</div>
 		</section>
     </main>

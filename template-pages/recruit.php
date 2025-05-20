@@ -48,7 +48,7 @@ get_header();
 					</div>
 					<p class="text">6:4</p>
 					<div class="img1">
-				   		<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon01.png" width="196" height="107" alt=""/>
+						<img src="<?php the_field('recruit_icon01'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -57,7 +57,7 @@ get_header();
 					</div>
 					<p class="text">4<span class="font_t">時間</span>10<span class="font_t">分</span></p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon02.png" width="96" height="96" alt=""/>
+						<img src="<?php the_field('recruit_icon02'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -66,7 +66,7 @@ get_header();
 					</div>
 					<p class="text1"><span class="font_s">取得率</span>86.8<span class="font_t">%</span><br><span class="font_s">取得日数</span>11.5<span class="font_t">日</span></p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon03.png" width="103" height="103" alt=""/>
+						<img src="<?php the_field('recruit_icon03'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -77,7 +77,7 @@ get_header();
 					</div>
 					<p class="text">100人</p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon04.png" width="109" height="110" alt=""/>
+						<img src="<?php the_field('recruit_icon04'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -86,7 +86,7 @@ get_header();
 					</div>
 					<p class="text">50億</p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon05.png" width="117" height="117" alt=""/>
+						<img src="<?php the_field('recruit_icon05'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -95,7 +95,7 @@ get_header();
 					</div>
 					<p class="text2">91.1<span class="font_t">%</span><br><span class="font_s">入社3年未満</span></p>
 					<div class="img2">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon06.png" width="107" height="107" alt=""/>
+						<img src="<?php the_field('recruit_icon06'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@ get_header();
 					</div>
 					<p class="text">6:4</p>
 					<div class="img1">
-				   		<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon01.png" width="196" height="107" alt=""/>
+						<img src="<?php the_field('recruit_icon01'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -121,7 +121,7 @@ get_header();
 					</div>
 					<p class="text">4<span class="font_t">時間</span>10<span class="font_t">分</span></p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon02.png" width="96" height="96" alt=""/>
+						<img src="<?php the_field('recruit_icon02'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -132,7 +132,7 @@ get_header();
 					</div>
 					<p class="text1"><span class="font_s">取得率</span>86.8<span class="font_t">%</span><br><span class="font_s">取得日数</span>11.5<span class="font_t">日</span></p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon03.png" width="103" height="103" alt=""/>
+						<img src="<?php the_field('recruit_icon03'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -141,7 +141,7 @@ get_header();
 					</div>
 					<p class="text">100人</p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon04.png" width="109" height="110" alt=""/>
+						<img src="<?php the_field('recruit_icon04'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@ get_header();
 					</div>
 					<p class="text">50億</p>
 					<div class="img">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon05.png" width="117" height="117" alt=""/>
+						<img src="<?php the_field('recruit_icon05'); ?>" >
 					</div>
 				</div>
 				<div class="box">
@@ -161,7 +161,7 @@ get_header();
 					</div>
 					<p class="text2">91.1<span class="font_t">%</span><br><span class="font_s">入社3年未満</span></p>
 					<div class="img2">
-		   		    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_icon06.png" width="107" height="107" alt=""/>
+						<img src="<?php the_field('recruit_icon06'); ?>" >
 					</div>
 				</div>
 			</div>
@@ -173,7 +173,7 @@ get_header();
 			</div>
 			<div class="sec_main flex_s">
 				<div class="img">
-	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_img01.png" width="439" height="292" alt=""/>
+					<img src="<?php the_field('recruit_img01'); ?>" >
 				</div>
 				<div class="text">
 					<div class="tag">
@@ -184,7 +184,7 @@ get_header();
 			</div>
 			<div class="sec_main flex_s">
 				<div class="img ord1">
-   	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_img02.png" width="440" height="293" alt=""/>
+					<img src="<?php the_field('recruit_img02'); ?>" >
 				</div>
 				<div class="text ord2">
 					<div class="tag">
@@ -197,7 +197,7 @@ get_header();
 			</div>
 			<div class="sec_main flex_s">
 				<div class="img">
-   	    	    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_img03.png" width="439" height="292" alt=""/>
+					<img src="<?php the_field('recruit_img03'); ?>" >
 				</div>
 				<div class="text">
 					<div class="tag">
@@ -259,13 +259,13 @@ get_header();
 					<h2>選考フロー</h2>
 				</div>
 				<div>
-			    	<img src="<?php echo get_template_directory_uri(); ?>/src/img/recruit_img04.png" width="1072" height="217" alt=""/>
+					<img src="<?php the_field('recruit_img04'); ?>" >
 				</div>
 				<div class="text_n">
 			    	<p>下記エントリーフォームよりご応募ください。<br>必要書類：履歴書（写真付き）・職務経歴書<br>ご不明点は採用担当までお気軽にお問い合わせください。</p>
 				</div>
 				<div class="button">
-					<a href="contact.html">
+					<a href="<?php echo home_url('/contact/'); ?>">
 						<p class="button-text">エントリーはこちら</p>
 					</a>
 				</div>

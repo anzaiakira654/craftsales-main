@@ -24,15 +24,17 @@ get_header();
 			</div>
 		</section>
 
+		<?php echo do_shortcode('[contact-form-7 id="e862c6c" title="コンタクトフォーム 1"]'); ?>
+
 		<section id="con_sec01">
 			<div class="con_box">
 				<p class="message">お問い合わせのご連絡は<br class="pc_none">下記までお願いいたします。</p>
 				<div class="con_call flex">
 					<div class="img">
-	    	    		<img src="<?php echo get_template_directory_uri(); ?>/src/img/contact_img01.png" width="89" height="89" alt=""/>
+						<img src="<?php the_field('contact_img01'); ?>" >
 					</div>
 					<div class="text">
-						<p>電話　：000-1234-5678<br>ＦＡＸ：000-1234-5678</p>
+						<p>電話　：<?php the_field('field_6823ff68a3a17' , 'company_call'); ?><br>ＦＡＸ：<?php the_field('field_6823ff83a3a18' , 'company_fax'); ?></p>
 					</div>
 				</div>
 			</div>
@@ -48,7 +50,7 @@ get_header();
 
 					<div class="form-group flex_s">
 						<label>会社名 <span class="optional">任意</span></label>
-						<input type="text" placeholder="株式会社CRAFT SALES">
+						<input type="text" placeholder="<?php the_field('field_6822efe9820b9' , 'company_name'); ?>">
 					</div>
 
 					<div class="form-group flex_s">
@@ -68,7 +70,7 @@ get_header();
 
 					<div class="form-group flex_s">
 						<label>電話番号 <span class="required">必須</span></label>
-						<input type="text" required placeholder="000-1234-5678">
+						<input type="text" required placeholder="<?php the_field('field_6823ff68a3a17' , 'company_call'); ?>">
 					</div>
 
 					<div class="form-group flex_s">

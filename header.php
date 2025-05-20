@@ -36,7 +36,7 @@
 				<?php
 				else :
 				?>
-					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php the_field('logo01'); ?>" ></a></p>
+					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php the_field('logo01', get_option('page_on_front')); ?>" alt="ロゴ"></a></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation nav_pc">
