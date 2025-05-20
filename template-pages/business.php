@@ -49,7 +49,6 @@ get_header();
 				</div>
 				<div class="img">
 					<img src="<?php the_field('business_img01'); ?>" >
-					
 				</div>
 			</div>
 			<div id="biz_sec02-2" class="sec2-1 flex_s">
