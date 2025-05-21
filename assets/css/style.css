@@ -540,15 +540,21 @@ left: 50%;transform: translate(-50%, -50%);color: #fff;}
 #con_sec01 .contact-form {background: white;padding: 30px;margin: auto;border-radius: 10px;}
 #con_sec01 .con_p01 {text-align: center;padding-bottom: 30px;}
 #con_sec01 .form-description {margin-bottom: 20px;}
-#con_sec01 .form-group {position: relative;padding: 15px 0;border-bottom: 1px solid #000;justify-content: flex-start;}
-#con_sec01 .form-group label {position: relative;display: block;width: 40%; font-weight: bold;padding: 10px 0;}
+#con_sec01 .form-group {position: relative;padding: 15px 0;border-bottom: 1px solid #000;width: 100%;}
+#con_sec01 .form-group label:nth-child(1) {position: relative;display: block;width: 40%; font-weight: bold;padding: 10px 0;}
+
+#con_sec01 .form-group p:nth-child(1) {width: 100%;display:flex; justify-content: flex-start;}
+#con_sec01 .form-group .con_lab01{position: relative;display: block;width: 40%; font-weight: bold;padding: 10px 0;}
+/*#con_sec01 .form-group p .wpcf7-form-control-wrap{width: 60%;padding: 10px;border-radius: 5px;background: #E6E6E6;}*/
 
 #con_sec01 .radio-group label:nth-child(2),
 #con_sec01 .radio-group label:nth-child(3),
 #con_sec01 .radio-group label:nth-child(4){margin-right: 30px;font-weight: normal;padding: 10px 0}
 input[type="text"],
 input[type="email"],
-textarea {width: 60%;padding: 10px;border: 1px solid #ccc;border-radius: 5px;background: #E6E6E6;}
+input[type="tel"],
+textarea,
+.wpcf7-form-control-wrap {width: 100%;padding: 10px;border: 0px solid #ccc;border-radius: 5px;background: #E6E6E6;}
 textarea {height: 200px;resize: vertical;}
 input[type="radio"],
 input[type="checkbox"]{position: relative;top: 2px; width: 16px;height: 16px;}
@@ -556,8 +562,8 @@ input[type="checkbox"]{position: relative;top: 2px; width: 16px;height: 16px;}
 #con_sec01 .required {position: absolute;right: 20px; background: #ff6666;color: white;padding: 4px 10px;border-radius: 3px;font-size: 16px;margin-left: 5px;}
 #con_sec01 .optional {position: absolute;right: 20px;background: #ccc;color: white;padding: 4px 10px;border-radius: 3px;font-size: 16px;margin-left: 5px;}
 #con_sec01 .checkbox-group {width: 100%;margin: 50px auto; text-align: center; font-weight: normal;}
-#con_sec01 .submit-btn {display: block; background: #0070c0;color: white;font-size: 20px;padding: 20px 100px;border: none;cursor: pointer;margin: 0 auto;}
-#con_sec01 .submit-btn:hover {
+#con_sec01 .wpcf7-submit{display: block; background: #0070c0;color: white;font-size: 20px;padding: 20px 100px;border: none;cursor: pointer;margin: 0 auto;}
+#con_sec01 .wpcf7-submit:hover {
 background: #005999;
 }
 .check_a {color: #00afff;border-bottom: 1px solid #00afff;}
@@ -591,10 +597,14 @@ textarea {font-size: 16px;}
 #con_sec01 .radio-group label:nth-child(2),
 #con_sec01 .radio-group label:nth-child(3),
 #con_sec01 .radio-group label:nth-child(4){margin-right: 5px;font-weight: normal;padding: 20px 0}
+
+#con_sec01 .form-group p:nth-child(1) {display:block;}
 input[type="text"],
 input[type="email"],
-textarea {width: 100%;padding: 10px;border: 1px solid #ccc;border-radius: 5px;background: #E6E6E6;}
-textarea {width: 100%;padding: 10px;border: 1px solid #ccc;border-radius: 5px;background: #E6E6E6;}
+input[type="tel"],
+textarea,
+.wpcf7-form-control-wrap {width: 100%;padding: 10px 0;border: 0px solid #ccc;border-radius: 5px;background: #E6E6E6;}
+
 }
 
 
