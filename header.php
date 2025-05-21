@@ -51,6 +51,28 @@
 				);
 				?>
 			</nav><!-- #site-navigation -->
+			<div class="header_sp">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="nav_sp">
+						<ul>
+							<li><a href="index.html"><p>TOPページ</p></a></li>
+							<li><a href="news.html"><p>NEWS</p></a></li>
+							<li><a href="company.html"><p>会社情報</p></a></li>
+							<li><a href="recruit.html"><p>求人情報</p></a></li>
+							<li><a href="contact.html"><p>お問い合わせ</p></a></li>
+							<li><a href="sitemap.html"><p>サイトマップ</p></a></li>
+							<li><a href="business.html"><p>事業内容</p></a></li>
+							<li><a href="business.html#biz_sec02-1"><p>法人向け営業代行業務</p></a></li>
+							<li><a href="business.html#biz_sec02-2"><p>営業コンサルティング</p></a></li>
+							<li><a href="business.html#biz_sec02-3"><p>テレアポ支援</p></a></li>
+							<li><a href="business.html#biz_sec02-4"><p>営業研修・人材育成</p></a></li>
+						</ul>
+					</nav>
+				</div>
 		</header><!-- #masthead -->
 
 		<div class="header_top bold button01">
