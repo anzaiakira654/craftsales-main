@@ -152,34 +152,10 @@ get_header();
 				<h2>NEWS</h2>
 			</div>
 			<div class="sec05">
-
-				<div class="sec05_news">
-					<a href="#" class="flex">
-						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
-					</a>
-				</div>
-				<div class="sec05_news">
-					<a href="#" class="flex">
-						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
-					</a>
-				</div>
-				<div class="sec05_news">
-					<a href="#" class="flex">
-						<p class="sec05_p01">2025/04/16</p>
-						<p class="sec05_p02">お知らせ内容<span class="sec05_p03 icon-arrow-br"></span></p>
-					</a>
-				</div>
-
-				<!--
-					<div class="news-list" id="newsList">
-					 JavaScriptで挿入 
-					</div>-->
-
+				<?php echo do_shortcode('[news_list]'); ?>
 			</div>
 			<div class="button">
-			<a href="<?php echo home_url('/news/'); ?>">
+			<a href="<?php echo home_url('/news-list/'); ?>">
 				<p class="button-text">
 					<span>一覧を見る</span><span class="icon-arrow-r"></span>
 				</p>

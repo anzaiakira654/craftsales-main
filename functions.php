@@ -188,3 +188,115 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function create_post_type_news(){
+ register_post_type( 
+  'news',
+  array(
+   'labels' => array(
+    'name' => 'NEWS'
+   ),
+   'public' => true,
+   'has_archive' => true,
+   'supports' => array('title','editor','thumbnail','author'),
+   'show_in_rest' => true,
+  )
+ );
+}
+add_action( 'init', 'create_post_type_news' );
+
+//TOPページに3件記載するショートコード
+function shortcode_news_list() {
+ global $post;
+ $args = array(
+  'posts_per_page' => 3,  // 一覧に表示させる件数
+  'post_type' => 'news',  // お知らせのスラッグ
+  'post_status' => 'publish'
+ );
+ $the_query = new WP_Query( $args );
+ $html = ''; // ← ここで初期化！
+ // お知らせ一覧用HTMLコード作成
+ if ( $the_query->have_posts() ) {
+  $html .= '<ul>';
+  while ( $the_query->have_posts() ) :
+  $the_query->the_post();
+  $url = get_permalink();
+  $title = get_the_title();
+  $date = get_the_date('Y/m/d');
+  $html .= '<li>';
+  $html .= '<a href="'.$url.'">';
+  $html .= '<p class="news_date">'.$date.'</p>';
+  $html .= '<h3 class="news_title">'.$title.'</h3>';
+  $html .= '</a></li>';
+  endwhile;
+  $html .= '</ul>';
+  wp_reset_postdata(); // ← クエリのリセットも忘れずに
+ }
+ return $html;
+}
+add_shortcode("news_list", "shortcode_news_list");
+
+//NEWSページに全件記載するショートコード
+function shortcode_news_list_all() {
+    global $post;
+
+    // 現在のページ番号を取得（クエリ変数 'paged' を参照）
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    // WP_Query パラメータ
+    $args = array(
+        'posts_per_page' => 10,       // 1ページに表示する件数
+        'post_type' => 'news',        // 投稿タイプ
+        'post_status' => 'publish',
+        'paged' => $paged             // ページネーション対応
+    );
+    $the_query = new WP_Query($args);
+
+    $html = '';
+
+    if ($the_query->have_posts()) {
+        $html .= '<ul class="news-list">';
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+            $url = get_permalink();
+            $title = get_the_title();
+            $date = get_the_date('Y/m/d');
+            $html .= '<li>';
+            $html .= '<a href="'.$url.'">';
+            $html .= '<p class="news_date">'.$date.'</p>';
+            $html .= '<h3 class="news_title">'.$title.'</h3>';
+            $html .= '</a></li>';
+        }
+        $html .= '</ul>';
+
+        // ページネーション表示
+        $big = 999999999; // 必須：仮の大きな数値
+        $html .= paginate_links(array(
+            'base'    => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+            'format'  => '?paged=%#%',
+            'current' => max(1, $paged),
+            'total'   => $the_query->max_num_pages,
+            'type'    => 'list',
+            'prev_text' => '« 前へ',
+            'next_text' => '次へ »'
+        ));
+
+        wp_reset_postdata();
+    }
+
+    return $html;
+}
+add_shortcode("news_list_all", "shortcode_news_list_all");
+
+// "news" 投稿タイプにもテンプレート選択メタボックスを表示する
+add_action('add_meta_boxes', 'add_template_to_news_post_type');
+function add_template_to_news_post_type() {
+    add_meta_box(
+        'pageparentdiv',               // メタボックスID（固定ページと同じでOK）
+        __('Template'),                // 表示タイトル
+        'post_parent_meta_box',        // 中身の関数（WordPressコアのテンプレート選択）
+        'news',                        // 対象の投稿タイプ ← ここを"news"に
+        'side',
+        'core'
+    );
+}

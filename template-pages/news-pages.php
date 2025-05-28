@@ -12,7 +12,8 @@
  *
  * @package craftsales
  * 
- * Template Name:news
+ * Template Name: ニュース専用テンプレート
+ * Template Post Type: news
  */
 
 get_header();
@@ -23,9 +24,11 @@ get_header();
 				<h2>NEWS</h2>
 			</div>
 		</section>
-
-		<?php echo do_shortcode('[news_list_all]'); ?>
 		
+		<section id="new_sec01">
+			<h3><?php the_title(); ?></h3>
+			<?php the_content(); ?>
+		</section>
     </main>
 
 
