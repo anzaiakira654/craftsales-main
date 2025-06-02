@@ -59,8 +59,8 @@
 					</div>
 					<nav class="nav_sp">
 						<ul>
-							<li><a href="index.html"><p>TOPページ</p></a></li>
-							<li><a href="news.html"><p>NEWS</p></a></li>
+							<li><a href="<?php echo esc_url(home_url('/')); ?>"><p>TOPページ</p></a></li>
+							<li><a href="news-list"><p>NEWS</p></a></li>
 							<li><a href="company.html"><p>会社情報</p></a></li>
 							<li><a href="recruit.html"><p>求人情報</p></a></li>
 							<li><a href="contact.html"><p>お問い合わせ</p></a></li>

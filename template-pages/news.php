@@ -17,16 +17,17 @@
 
 get_header();
 ?>
-    <main>
-        <section id="new_FV" class="FV_2" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/img/news_FV.png');">
-			<div class="text">
-				<h2>NEWS</h2>
-			</div>
-		</section>
 
-		<?php echo do_shortcode('[news_list_all]'); ?>
-		
-    </main>
+<main>
+
+	<!-- メインvisual -->
+	<?php get_template_part($hp_dir . '/tmp--news-mainvisual'); ?>
+	<!-- メインvisual -->
+	<!-- ニュース一覧ショートコード(function.php 195行目～) -->
+	<?php echo do_shortcode('[news_list_all]'); ?>
+	<!-- ニュース一覧ショートコード -->
+	
+</main>
 
 
 <?php

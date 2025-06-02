@@ -8,6 +8,9 @@
  * @package craftsales
  */
 
+ $hp_dir = "template-parts";
+ $hp_path = get_template_directory_uri() . "/" . $hp_dir;
+
 if (! defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
 	define('_S_VERSION', '1.0.0');
