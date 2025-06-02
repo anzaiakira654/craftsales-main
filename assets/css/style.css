@@ -259,13 +259,13 @@ background-repeat: no-repeat;height: 800px;}
 @media screen and (max-width:1440px){
 #top_sec05 .sec_main{width: 90%; margin: 0 auto;}
 #top_sec05 .section_title{position: absolute;padding: 80px 10%;}
-.sec05 {position: relative;top: 100px; left: 40%; width: 60%;}
+#top_sec05 .sec05 {position: relative;top: 100px; left: 40%; width: 60%;}
 #top_sec05 .button {position: absolute;top: 180px;left: 10%;}
 }
 @media screen and (max-width:767px){
 #top_sec05 {padding-bottom: 100px;}
 #top_sec05 .section_title{position: relative;padding: 0;}
-.sec05 {position: relative;top: 0px; left: 0%; width: 100%;}
+#top_sec05 .sec05 {position: relative;top: 0px; left: 0%; width: 100%;}
 #top_sec05 .button {position: relative;top: 10px;left: 0;}
 }
 
@@ -607,7 +607,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
-.wpcf7-form-control-wrap {width: 100%;padding: 10px 0;border: 0px solid #ccc;border-radius: 5px;background: #E6E6E6;}
+.wpcf7-form-control-wrap {width: 100%;padding: 10px 0;border: 0px solid #ccc;border-radius: 5px;}
 
 }
 
@@ -698,9 +698,11 @@ textarea,
 
 #new_sec01 h3 { width: 1000px; margin: 50px auto;}
 #new_sec01 p { width: 1000px; margin: 0 auto 100px;}
+#new_sec01 .button p { width: auto; margin: 0 auto 0px;}
 @media screen and (max-width:1440px){
 #new_sec01 h3 { width: 90%; max-width: 1000px; margin: 50px auto;}
 #new_sec01 p { width: 90%; max-width: 1000px; margin: 0 auto 100px;}
+#new_sec01 .button .button-text { margin: 0 auto;}
 
 }
 @media screen and (max-width:767px){

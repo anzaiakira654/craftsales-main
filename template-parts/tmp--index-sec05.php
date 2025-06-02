@@ -7,11 +7,11 @@
             <?php echo do_shortcode('[news_list]'); ?>
         </div>
         <div class="button">
-        <a href="<?php echo home_url('/news-list/'); ?>">
-            <p class="button-text">
-                <span>一覧を見る</span><span class="icon-arrow-r"></span>
-            </p>
-        </a>
-    </div>
+            <a href="<?php echo home_url('/news-list/'); ?>">
+                <p class="button-text">
+                    <span>一覧を見る</span><span class="icon-arrow-r"></span>
+                </p>
+            </a>
+        </div>
     </div>
 </section>
