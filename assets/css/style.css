@@ -124,7 +124,7 @@ header .header_sp {display: none;}
 header .nav_pc p {font-size: clamp(12px, 1.5vw, 20px);padding:  20px 1vw;}
 
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:1100px){
 header .nav_pc{display: none;}
 header .header_sp {display: block;}
 header .logo {width: 240px;}
