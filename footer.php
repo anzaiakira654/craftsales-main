@@ -31,19 +31,6 @@
 			</div>
 			<div class="wid02 flex">
 				<div class="wid03">
-				<!--
-					<nav id="site-navigation" class="main-navigation nav_pc">
-						<?php
-							/*$pages = get_pages( array( 'sort_column' => 'ID', 'sort_order' => 'asc' ) );
-							foreach ( $pages as $page ) {
-								$current = ( get_the_ID() == $page->ID ) ? ' class="current_page_item"' : '';
-								echo '<li class="page_item page-item-' . $page->ID . '"' . $current . '>';
-								echo '<a href="' . get_permalink( $page->ID ) . '">' . esc_html( $page->post_title ) . '</a>';
-								echo '</li>';
-							}*/
-						?>
-					</nav>
-				-->
 					<!-- #site-navigation -->
 					<nav id="site-navigation" class="main-navigation nav_pc">
 						<?php
