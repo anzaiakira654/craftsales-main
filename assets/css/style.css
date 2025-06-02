@@ -128,8 +128,9 @@ header .nav_pc p {font-size: clamp(12px, 1.5vw, 20px);padding:  20px 1vw;}
 header .nav_pc{display: none;}
 header .header_sp {display: block;}
 header .logo {width: 240px;}
+header .site-title {width: 240px;}
 /*ハンバーガーメニュー*/
-.header_sp {display: flex;align-items: center;justify-content: space-between;}
+.header_sp {position: relative; right: 20px; display: flex;align-items: center;justify-content: space-between;}
 .header_sp .nav_sp {display: flex;gap: 10px;background-color: #fff;padding: 2vw 0 0; z-index: 9999;}
 .header_sp .nav_sp ul li {border-bottom: solid 1px #888;}
 .header_sp .nav_sp ul li p {font-size: 16px;padding: 12px;}
@@ -291,7 +292,7 @@ footer .copy{border-top: 1px solid #fff;height: 80px;}
 
 @media screen and (max-width:1440px){
 footer .top{width: 90%;gap: 10px;}
-footer .menu p {line-height: 30px;}
+footer .menu p {line-height: 30px; color: #fff;}
 footer .wid02 {gap: 50px;padding: 150px 0;}
 footer .wid03 p {font-size: 16px;line-height: 30px;color: #fff;}
 #site-navigation {font-size: 16px;line-height: 30px;}
